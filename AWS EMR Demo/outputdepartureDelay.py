@@ -43,4 +43,4 @@ df2 = spark.sql("""SELECT delay, origin, destination,
                ORDER BY origin, delay DESC""")
                
 
-df2.coalesce(1).write.mode("overwrite").csv("s3://rnr-spark-demo/output")
+df2.coalesce(1).write.mode("overwrite").csv("S3 URI to output folder")
